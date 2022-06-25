@@ -15,7 +15,7 @@ class CircleService extends GeometryCalculator
 	/**
 	 * @return float
 	 */
-	public function sumAreas(): float
+	public function sumArea(): float
 	{
 		return $this->p * pow($this->radius, 2);
 	}
