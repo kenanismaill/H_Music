@@ -45,7 +45,7 @@ class GeometryCalculatorController extends AbstractController
 			"a" => (float)(number_format((float)$a, 1)),
 			"b" => (float)(number_format((float)$b, 1)),
 			"c" => (float)(number_format((float)$c, 1)),
-			"surface" => (float)number_format($triangle->sumAreas(), 2),
+			"surface" => (float)number_format($triangle->sumArea(), 2),
 			"circumference" => (float)number_format($triangle->sumDiameters(), 2),
 		]);
 	}
@@ -74,7 +74,7 @@ class GeometryCalculatorController extends AbstractController
 		return $this->json([
 			"type" => "circle",
 			"radius" => (float)number_format((float)$radius, 2),
-			"surface" => (float)number_format($circle->sumAreas(), 2),
+			"surface" => (float)number_format($circle->sumArea(), 2),
 			"circumference" => (float)number_format($circle->sumDiameters(), 2),
 		]);
 	}
