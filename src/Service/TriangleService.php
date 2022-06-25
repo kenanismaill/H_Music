@@ -15,7 +15,7 @@ class TriangleService extends GeometryCalculator
 	/**
 	 * @return float
 	 */
-	public function sumAreas(): float
+	public function sumArea(): float
 	{
 		$s = ceil(($this->a + $this->b + $this->c) / 2);
 		
